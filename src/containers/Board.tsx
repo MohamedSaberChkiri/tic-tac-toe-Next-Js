@@ -2,6 +2,7 @@
 
 import Square from "@/components/Square";
 import { useState } from "react";
+import '../app/globals.css'
 
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -23,7 +24,7 @@ export default function Board() {
   };
 
   return (
-    <div className="w-[500px] h-[500px] bg-red">
+    <div className=" w-[400px] h-[400px] grid grid-rows-3 grid-cols-3 gap-2 mx-auto mt-[200px]">
       {Array(9).fill(null).map((_, i) => {
         return (
           <Square

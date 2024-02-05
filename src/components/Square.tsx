@@ -13,9 +13,9 @@ function Square({
     onClick : ()=> void
 }){
     if(!value){
-        return <Button  onClick={onClick} disabled={Boolean(winner)} ></Button>
+        return <Button  onClick={onClick} disabled={Boolean(winner)} className="h-full w-full "></Button>
     }
-    return <Button disabled>{value}</Button>
+    return <Button disabled className="h-full w-full text-7xl flex items-center justify-center text-white">{value}</Button>
 }
 
 export default Square
