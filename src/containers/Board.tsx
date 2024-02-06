@@ -1,5 +1,4 @@
 "use client"
-
 import Square from "@/components/Square";
 import { useEffect, useState } from "react";
 import '../app/globals.css'
